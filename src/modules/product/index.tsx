@@ -118,7 +118,7 @@ function ProductPage() {
       </Box>
       <Box height="30px" />
       <Typography sx={{ mb: 2, fontSize: "20px", fontWeight: "600" }}>
-        Boshqa maxsulotlari
+        Boshqa maxsulotlar
       </Typography>
 
       <ProductList productId={Number(id || 0)} />
