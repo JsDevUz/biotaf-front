@@ -9,16 +9,10 @@ import thousandDivider from "../../utils/thousandDivider";
 function ProductPage() {
   const navigate = useNavigate();
   const { id } = useParams();
-  const [product, setProduct] = useState<{
-    about: string;
-    name: string;
-    img: string;
-    id: string;
-    price: number;
-  }>();
+  const [product, setProduct] = useState<any>();
   useEffect(() => {
     window.scrollTo(0, 0);
-    setProduct(productListData.find((e) => e?.id == id));
+    setProduct(productListData.find((e) => e?.id == Number(id)));
   }, [id]);
   let region: string;
   if (typeof window !== "undefined") {
@@ -52,7 +46,7 @@ function ProductPage() {
         <FaChevronLeft color="green" size={25} />
       </Box>
       <Box
-        sx={(theme) => ({
+        sx={() => ({
           "& .slider-wrapper": {
             borderRadius: 0,
             backgroundColor: "#fff",
@@ -62,7 +56,7 @@ function ProductPage() {
         })}
       >
         <Carousel showArrows={false} infiniteLoop showThumbs={false}>
-          {[1, 2, 3].map((img, i) => (
+          {[1, 2, 3].map((_, i) => (
             <Box
               sx={{
                 "& img": {
@@ -103,7 +97,7 @@ function ProductPage() {
             color: "green",
           }}
         >
-          {thousandDivider(product?.price)} so'm
+          {thousandDivider(Number(product?.price), "")} so'm
         </Typography>
         <Typography sx={{}}>{product?.about}</Typography>
         <Link to={getLink()}>

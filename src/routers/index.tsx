@@ -1,6 +1,6 @@
-import React, { Suspense } from "react";
-import { useRoutes, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import { Suspense } from "react";
+import { useLocation, useRoutes } from "react-router-dom";
 import MainPage from "../modules";
 import ProductPage from "../modules/product";
 const pageVariants = {

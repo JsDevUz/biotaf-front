@@ -1,22 +1,10 @@
 import { Box, Typography } from "@mui/material";
 import thousandDivider from "../../utils/thousandDivider";
 
-function ProductSingle({
-  item,
-}: {
-  item: {
-    id: number;
-    img: string[];
-    name: string;
-    price: number;
-    weight: number;
-    about: string;
-    weigth?: undefined;
-  };
-}) {
+function ProductSingle({ item }: any) {
   return (
     <Box
-      sx={(theme) => ({
+      sx={() => ({
         borderRadius: "20px",
         bgcolor: "#fff",
         padding: "3px",
@@ -37,7 +25,7 @@ function ProductSingle({
       </Box>
       <Box sx={{ paddingLeft: "8px", paddingY: "10px" }}>
         <Typography sx={{ fontWeight: "600", fontSize: 20 }}>
-          {thousandDivider(item?.price)} so'm
+          {thousandDivider(item?.price, "")} so"m
         </Typography>
         <Typography
           sx={{

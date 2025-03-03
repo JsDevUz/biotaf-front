@@ -12,7 +12,7 @@ function MainPage() {
     setOpenLoc(false);
   };
   return (
-    <Box sx={(theme) => ({})}>
+    <Box sx={() => ({})}>
       <Box
         sx={(theme) => ({
           backgroundColor: theme.palette.background.default,

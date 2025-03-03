@@ -1,6 +1,5 @@
 import { Masonry } from "@mui/lab";
 import { Box } from "@mui/material";
-import React from "react";
 import ProductSingle from "./productSingle";
 import { Link } from "react-router-dom";
 import productListData from "../../../public/products.json";
