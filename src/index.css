@@ -1,0 +1,88 @@
+body{
+ padding: 0 10px;
+ margin:auto;
+ max-width: 400px;
+background-color: #dfdfdf;
+  overscroll-behavior: none;
+
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #171717;
+  --foreground: #f6f6f6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #171717;
+    --foreground: #f6f6f6;
+  }
+}
+
+a,li ul{
+  text-decoration: none;
+  color:#000
+}
+.carousel .legend {
+  display: none;
+}
+.slider-wrapper {
+  border-radius: 15px;
+}
+.container {
+  display: grid;
+  grid-template-rows: 100px;
+  grid-auto-rows: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -5px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 5px; /* gutter size */
+  background-clip: padding-box;
+  margin: 0 3px;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: white;
+  margin-bottom: 30px;
+}
+.my-masonry-grid_column > div {
+  margin-bottom: 10px !important;
+}
+.pName {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  max-width: 100%;
+}
+.carousel .thumb {
+  padding: 0 !important;
+}
+.carousel .slide img {
+  width: 100%;
+  object-fit: contain;
+  padding: 0;
+}
+.carousel .thumb.selected,
+.carousel .thumb:hover {
+  border-radius: 15px;
+  border: 2px solid red !important;
+}
+.carousel .thumbs-wrapper {
+  margin: 10px 0 !important;
+}
