@@ -18,7 +18,6 @@ function ProductPage() {
   if (typeof window !== "undefined") {
     region = localStorage.getItem("loc") || "Toshkent";
   }
-  console.log("l");
 
   const getLink = () => {
     return region == "Toshkent"
