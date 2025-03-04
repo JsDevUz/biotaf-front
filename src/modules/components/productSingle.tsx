@@ -25,7 +25,7 @@ function ProductSingle({ item }: any) {
       </Box>
       <Box sx={{ paddingLeft: "8px", paddingY: "10px" }}>
         <Typography sx={{ fontWeight: "600", fontSize: 20 }}>
-          {thousandDivider(item?.price, "")} so"m
+          {thousandDivider(item?.price, "")} so'm
         </Typography>
         <Typography
           sx={{
