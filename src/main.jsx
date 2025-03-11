@@ -4,8 +4,14 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-createRoot(rootElement).render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-);
+const rootElement = document.getElementById("root"); // ✅ Define rootElement
+
+if (rootElement) {
+  createRoot(rootElement).render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+} else {
+  console.error("Root element not found");
+}

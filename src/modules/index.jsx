@@ -5,7 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 import ProductList from "./components/productList";
 function MainPage() {
   const [openLoc, setOpenLoc] = useState(false);
-  const [loc, setLoc] = useState(localStorage.getItem("loc"));
+  const [loc, setLoc] = useState(localStorage.getItem("loc") || "Toshkent");
   const selectLoc = (e) => {
     setLoc(e);
     localStorage.setItem("loc", e);
