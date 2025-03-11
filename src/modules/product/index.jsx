@@ -87,6 +87,7 @@ function ProductPage() {
           sx={{
             fontWeight: "600",
             mb: "10px",
+            fontSize: "17px",
           }}
         >
           {product?.name}
@@ -101,7 +102,9 @@ function ProductPage() {
         >
           {thousandDivider(Number(product?.price), "")} so'm
         </Typography>
-        <Typography sx={{}}>{product?.about}</Typography>
+        <Typography fontSize={"17px"} sx={{}}>
+          {product?.about}
+        </Typography>
         <Link to={getLink()}>
           <Button
             sx={{

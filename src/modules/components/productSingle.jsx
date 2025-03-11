@@ -14,6 +14,7 @@ function ProductSingle({ item }) {
         sx={() => ({
           "& img": {
             width: "100%",
+            minHeight: "180px",
             borderRadius: "20px",
             objectFit: "contain",
             bgcolor: "#dfdfdf",
