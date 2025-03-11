@@ -21,13 +21,14 @@ function MainPage() {
           display: "flex",
           alignItems: "center",
           height: "50px",
-          padding: "0 10px",
           borderBottomLeftRadius: "20px",
           borderBottomRightRadius: "20px",
         })}
         onClick={() => setOpenLoc(true)}
       >
-        <FaLocationDot />
+        <Box ml={"15px"}>
+          <FaLocationDot />
+        </Box>
         <Typography mt="3px" fontWeight={"600"} ml={"10px"}>
           {loc}
         </Typography>
