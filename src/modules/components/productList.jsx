@@ -4,7 +4,7 @@ import ProductSingle from "./productSingle";
 import { Link } from "react-router-dom";
 import productListData from "../../../public/products.json";
 
-function ProductList({ productId }: { productId: number }) {
+function ProductList({ productId }) {
   return (
     <Box sx={{}}>
       <Masonry

@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import thousandDivider from "../../utils/thousandDivider";
 
-function ProductSingle({ item }: any) {
+function ProductSingle({ item }) {
   return (
     <Box
       sx={() => ({

@@ -9,12 +9,12 @@ import thousandDivider from "../../utils/thousandDivider";
 function ProductPage() {
   const navigate = useNavigate();
   const { id } = useParams();
-  const [product, setProduct] = useState<any>();
+  const [product, setProduct] = useState();
   useEffect(() => {
     window.scrollTo(0, 0);
     setProduct(productListData.find((e) => e?.id == Number(id)));
   }, [id]);
-  let region: string;
+  let region;
   if (typeof window !== "undefined") {
     region = localStorage.getItem("loc") || "Toshkent";
   }

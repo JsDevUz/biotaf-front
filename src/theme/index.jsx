@@ -1,6 +1,6 @@
 import { createTheme, Theme } from "@mui/material";
 
-const theme: Theme = createTheme({
+const theme = createTheme({
   palette: {
     background: {
       default: "#fe5000", // Sets the default background color

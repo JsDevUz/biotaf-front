@@ -6,7 +6,7 @@ import ProductList from "./components/productList";
 function MainPage() {
   const [openLoc, setOpenLoc] = useState(false);
   const [loc, setLoc] = useState(localStorage.getItem("loc"));
-  const selectLoc = (e: string) => {
+  const selectLoc = (e) => {
     setLoc(e);
     localStorage.setItem("loc", e);
     setOpenLoc(false);
