@@ -104,7 +104,7 @@ function MainPage() {
           }}
         />
         <Box padding={"15px"}>
-          {["Toshkent", "Andijon", "Jizzah"].map((e) => (
+          {["Toshkent", "Andijon", "Jizzah", "Asaka"].map((e) => (
             <Typography
               onClick={() => selectLoc(e)}
               sx={{

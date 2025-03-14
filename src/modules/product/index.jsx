@@ -21,13 +21,14 @@ function ProductPage() {
   console.log("l");
 
   const getLink = () => {
-    return region == "Toshkent"
-      ? "https://telegram.me/Muxtorjon_HR"
-      : region == "Jizzah"
-      ? "https://telegram.me/shokh_0810"
-      : region == "Andijon"
-      ? "https://telegram.me/BioTaf_and"
-      : "https://telegram.me/UzbekistanAndAsaka";
+    // return region == "Toshkent"
+    //   ? "https://telegram.me/Muxtorjon_HR"
+    //   : region == "Jizzah"
+    //   ? "https://telegram.me/shokh_0810"
+    //   : region == "Andijon"
+    //   ? "https://telegram.me/BioTaf_and"
+    //   : "https://telegram.me/UzbekistanAndAsaka";
+    return "https://telegram.me/biotafadmin";
   };
   return (
     <Box>
